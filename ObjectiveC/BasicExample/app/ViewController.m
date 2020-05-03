@@ -40,11 +40,12 @@ NSString *const kAdTagURLString = @"https://pubads.g.doubleclick.net/gampad/ads?
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor blackColor];
   [self setupAdsLoader];
-  [self setupContentPlayer];
+  
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  [self setupContentPlayer];
   [self requestAds];
 }
 
@@ -56,13 +57,14 @@ NSString *const kAdTagURLString = @"https://pubads.g.doubleclick.net/gampad/ads?
 - (void)setupContentPlayer {
   // Create a content video player. Create a playhead to track content progress so the SDK knows
   // when to play ads in a VMAP playlist.
-  NSURL *contentURL = [NSURL URLWithString:kContentURLString];
+    
+  NSURL *contentURL = [NSURL URLWithString:[self.adConfig mediaSourceURL]];
   AVPlayer *player = [AVPlayer playerWithURL:contentURL];
   self.contentPlayerViewController = [[AVPlayerViewController alloc] init];
   self.contentPlayerViewController.player = player;
   self.contentPlayerViewController.view.frame = self.view.bounds;
   self.contentPlayhead =
-      [[IMAAVPlayerContentPlayhead alloc] initWithAVPlayer:self.contentPlayerViewController.player];
+      [[IMAAVPlayerContentPlayhead alloc] initWithAVPlayer:self.contentPlayerViewController.player]; 
 
   // Track end of content.
   AVPlayerItem *contentPlayerItem = self.contentPlayerViewController.player.currentItem;
@@ -96,7 +98,7 @@ NSString *const kAdTagURLString = @"https://pubads.g.doubleclick.net/gampad/ads?
   // Pass the main view as the container for ad display.
   IMAAdDisplayContainer *adDisplayContainer =
       [[IMAAdDisplayContainer alloc] initWithAdContainer:self.view];
-  IMAAdsRequest *request = [[IMAAdsRequest alloc] initWithAdTagUrl:kAdTagURLString
+  IMAAdsRequest *request = [[IMAAdsRequest alloc] initWithAdTagUrl:[self.adConfig adTagURL]
                                                 adDisplayContainer:adDisplayContainer
                                                    contentPlayhead:self.contentPlayhead
                                                        userContext:nil];

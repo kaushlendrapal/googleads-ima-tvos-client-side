@@ -14,6 +14,11 @@
 		A0A20B4D2294841D00D74C0A /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A20B2A2294838E00D74C0A /* AppDelegate.h */; };
 		FA412D1D245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */; };
 		FA412D1E245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA412D24245F326200F392BE /* ConfigurationTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA412D21245F326200F392BE /* ConfigurationTableViewController.h */; };
+		FA412D25245F326200F392BE /* ConfigurationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA412D22245F326200F392BE /* ConfigurationTableViewController.m */; };
+		FA412D28245F3D8B00F392BE /* ConfigurationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA412D27245F3D8B00F392BE /* ConfigurationTableViewController.xib */; };
+		FA412D2B245F3F9A00F392BE /* MediaConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FA412D29245F3F9A00F392BE /* MediaConfig.h */; };
+		FA412D2C245F3F9A00F392BE /* MediaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FA412D2A245F3F9A00F392BE /* MediaConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +44,11 @@
 		A0A20B2F2294838E00D74C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0A20B34229483C300D74C0A /* BasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
+		FA412D21245F326200F392BE /* ConfigurationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationTableViewController.h; sourceTree = "<group>"; };
+		FA412D22245F326200F392BE /* ConfigurationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigurationTableViewController.m; sourceTree = "<group>"; };
+		FA412D27245F3D8B00F392BE /* ConfigurationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurationTableViewController.xib; sourceTree = "<group>"; };
+		FA412D29245F3F9A00F392BE /* MediaConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaConfig.h; sourceTree = "<group>"; };
+		FA412D2A245F3F9A00F392BE /* MediaConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		A0A20B292294838E00D74C0A /* app */ = {
 			isa = PBXGroup;
 			children = (
+				FA412D20245F322900F392BE /* configurations */,
 				A0A20B2A2294838E00D74C0A /* AppDelegate.h */,
 				A0A20B2B2294838E00D74C0A /* AppDelegate.m */,
 				A0A20B2C2294838E00D74C0A /* Info.plist */,
@@ -83,6 +94,18 @@
 			);
 			sourceTree = "<group>";
 		};
+		FA412D20245F322900F392BE /* configurations */ = {
+			isa = PBXGroup;
+			children = (
+				FA412D27245F3D8B00F392BE /* ConfigurationTableViewController.xib */,
+				FA412D21245F326200F392BE /* ConfigurationTableViewController.h */,
+				FA412D22245F326200F392BE /* ConfigurationTableViewController.m */,
+				FA412D29245F3F9A00F392BE /* MediaConfig.h */,
+				FA412D2A245F3F9A00F392BE /* MediaConfig.m */,
+			);
+			path = configurations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -90,6 +113,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA412D24245F326200F392BE /* ConfigurationTableViewController.h in Headers */,
+				FA412D2B245F3F9A00F392BE /* MediaConfig.h in Headers */,
 				A0A20B4D2294841D00D74C0A /* AppDelegate.h in Headers */,
 				A0A20B4C2294841900D74C0A /* ViewController.h in Headers */,
 			);
@@ -153,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA412D28245F3D8B00F392BE /* ConfigurationTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA412D2C245F3F9A00F392BE /* MediaConfig.m in Sources */,
+				FA412D25245F326200F392BE /* ConfigurationTableViewController.m in Sources */,
 				A0A20B482294840C00D74C0A /* AppDelegate.m in Sources */,
 				A0A20B492294840E00D74C0A /* ViewController.m in Sources */,
 				A0A20B4A2294840F00D74C0A /* main.m in Sources */,

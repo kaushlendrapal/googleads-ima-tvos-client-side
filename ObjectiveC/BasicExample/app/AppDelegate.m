@@ -16,13 +16,17 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "ConfigurationTableViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  self.window.rootViewController = [[ViewController alloc] init];
+    
+    ConfigurationTableViewController *tableViewcontroller = [[ConfigurationTableViewController alloc]initWithNibName:@"ConfigurationTableViewController" bundle: nil];
+    UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController: tableViewcontroller];
+  self.window.rootViewController = navigationVC;
   [self.window makeKeyAndVisible];
   return YES;
 }
