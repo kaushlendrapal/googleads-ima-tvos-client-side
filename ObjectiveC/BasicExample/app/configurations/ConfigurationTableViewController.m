@@ -30,41 +30,49 @@
 
 - (void)crateDataSource {
     self.tableDataSource = [[NSMutableArray alloc]init];
-    [self.tableDataSource addObject: @"1th Ad tag URL"];
-    [self.tableDataSource addObject: @"2th Ad tag URL"];
-    [self.tableDataSource addObject: @"3th Ad tag URL"];
-    [self.tableDataSource addObject: @"4th Ad tag URL"];
-    [self.tableDataSource addObject: @"5th Ad tag URL"];
+    [self.tableDataSource addObject: @"Roudies season 18 episode 7 Ad tag URL"];
+    [self.tableDataSource addObject: @"Roudies season 18 episode 6 Ad tag URL"];
+    [self.tableDataSource addObject: @"Roudies season 18 episode 5 Ad tag URL"];
+    [self.tableDataSource addObject: @"Roudies season 18 episode 4 Ad tag URL"];
+    [self.tableDataSource addObject: @"SplitVilla season 12 episode 1 Ad tag URL"];
 }
 
+// mock Ad tag url with media content for playback selection.
 - (void) configureMediaAdTagSource {
     mediaConfigrations = [[NSMutableArray alloc]init];
+    //
     MediaConfig *adConfig1 = [[MediaConfig alloc] init];
-    adConfig1.mediaSourceURL = @"https://rest-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/225/assetId/411909/assetType/media/assetFileId/2173108/contextType/PLAYBACK/ks/djJ8MjI1fKo7vVImc1lUwh6y-vdSa1h5d1MTJLl_So8ikBnWBqPyAS1To5JG2JMJZaqoHQ3MR3VHhQQeizyDM7mf13jJvSboQxQ258DTEKSelA66cg9mkRrtyIEZBAF7xLzeeJy9asdHV8KJnKgYcSibmTbLazl6uBLte5UYNBg1sMu10vFY4iTWrRNyh6ntw54tjuJjzhrNeVnvbstACyeQ3tMCppMy0_DlKcfX6II5LzNt9gRglowXsoyj1-3cYbr-Xent38QAiaNchq7mhvwpgF0vrxc=/a.m3u8";
-    adConfig1.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COH&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjiU0phQzr0gAZxAjJOuVhjr56HG3%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D14%26AppVersion%3D2.2.1%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=jiU0phQzr0gAZxAjJOuVhjr56HG3&vid=0_umeuevxr&correlator=6170411&description_url=https://www.voot.com&InterstitialRendered=False";
+    adConfig1.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_q15swipk/format/applehttp/tags/tv/f/a.m3u8";
+    adConfig1.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjiU0phQzr0gAZxAjJOuVhjr56HG3%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D14%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=jiU0phQzr0gAZxAjJOuVhjr56HG3&vid=0_q15swipk&correlator=3040344&description_url=https://www.voot.com&InterstitialRendered=False";
     [mediaConfigrations addObject:adConfig1];
     
+    // Roudies s18e6
     MediaConfig *adConfig2 = [[MediaConfig alloc] init];
-    adConfig2.mediaSourceURL = @"";
-    adConfig2.adTagURL = @"";
-    [mediaConfigrations addObject:adConfig1];
+    adConfig2.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_uuel9u8v/format/applehttp/tags/tv/f/a.m3u8";
+    adConfig2.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id=judBw77VOhUW2zUZTEGFA7KZGnq2&sample_ar=skippablelinear&Gender=M&Age=15&AppVersion=2.2.1&OSVersion=13.3&OptOut=False&PackageName=com.viacom18.voottvosdev&DeviceModel=Simulator Apple TV 4K&first_time=false&logintype=Native&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_uuel9u8v&correlator=1620132&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig2];
     
+//    Roudies s18e5
     MediaConfig *adConfig3 = [[MediaConfig alloc] init];
-    adConfig3.mediaSourceURL = @"";
-    adConfig3.adTagURL = @"";
-    [mediaConfigrations addObject:adConfig1];
+    adConfig3.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_rbdm0iq1/format/applehttp/tags/tv/f/a.m3u8";
+    adConfig3.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.1%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_rbdm0iq1&correlator=7058133&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig3];
     
+    //Roudies s18e4
     MediaConfig *adConfig4 = [[MediaConfig alloc] init];
-    adConfig4.mediaSourceURL = @"";
-    adConfig4.adTagURL = @"";
-    [mediaConfigrations addObject:adConfig1];
+    adConfig4.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_iqhb8qs0/format/applehttp/tags/tv/f/a.m3u";
+    adConfig4.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.1%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_iqhb8qs0&correlator=6316240&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig4];
     
+    //Split vila  s12e1
     MediaConfig *adConfig5 = [[MediaConfig alloc] init];
-    adConfig5.mediaSourceURL = @"";
-    adConfig5.adTagURL = @"";
-    [mediaConfigrations addObject:adConfig1];
+    adConfig5.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_ywyb33ou/format/applehttp/tags/tv/f/a.m3u8";
+    adConfig5.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.1%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_ywyb33ou&correlator=6852807&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig5];
     
 }
+
+
 
 - (void) registerTableCellIdentifier {
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ConfigurationTableViewCell"];

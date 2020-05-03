@@ -64,7 +64,7 @@ NSString *const kAdTagURLString = @"https://pubads.g.doubleclick.net/gampad/ads?
   self.contentPlayerViewController.player = player;
   self.contentPlayerViewController.view.frame = self.view.bounds;
   self.contentPlayhead =
-      [[IMAAVPlayerContentPlayhead alloc] initWithAVPlayer:self.contentPlayerViewController.player]; 
+      [[IMAAVPlayerContentPlayhead alloc] initWithAVPlayer:self.contentPlayerViewController.player];
 
   // Track end of content.
   AVPlayerItem *contentPlayerItem = self.contentPlayerViewController.player.currentItem;
