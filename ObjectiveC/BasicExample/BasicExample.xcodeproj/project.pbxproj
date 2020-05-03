@@ -12,7 +12,23 @@
 		A0A20B4A2294840F00D74C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A20B2F2294838E00D74C0A /* main.m */; };
 		A0A20B4C2294841900D74C0A /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A20B2D2294838E00D74C0A /* ViewController.h */; };
 		A0A20B4D2294841D00D74C0A /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A20B2A2294838E00D74C0A /* AppDelegate.h */; };
+		FA412D1D245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */; };
+		FA412D1E245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA412D1F245F30D200F392BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA412D1E245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A0A20B2A2294838E00D74C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -22,6 +38,7 @@
 		A0A20B2E2294838E00D74C0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A0A20B2F2294838E00D74C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0A20B34229483C300D74C0A /* BasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA412D1D245F30D200F392BE /* GoogleInteractiveMediaAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		A0F3A52F22948352003CBDDC = {
 			isa = PBXGroup;
 			children = (
+				FA412D1B245F308100F392BE /* GoogleInteractiveMediaAds.framework */,
 				A0A20B292294838E00D74C0A /* app */,
 				A0A20B35229483C300D74C0A /* Products */,
 			);
@@ -87,6 +106,7 @@
 				A0A20B30229483C300D74C0A /* Sources */,
 				A0A20B31229483C300D74C0A /* Frameworks */,
 				A0A20B32229483C300D74C0A /* Resources */,
+				FA412D1F245F30D200F392BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +212,10 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -263,6 +287,10 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
