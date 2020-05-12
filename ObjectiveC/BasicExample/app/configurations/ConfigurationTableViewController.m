@@ -35,6 +35,8 @@
     [self.tableDataSource addObject: @"Roudies season 18 episode 5 Ad tag URL"];
     [self.tableDataSource addObject: @"Roudies season 18 episode 4 Ad tag URL"];
     [self.tableDataSource addObject: @"SplitVilla season 12 episode 1 Ad tag URL"];
+    [self.tableDataSource addObject: @"Mahakali season 1 episode 2 Ad tag URL"];
+    [self.tableDataSource addObject: @"Krishna season 1 episode 1 Ad tag URL"];
 }
 
 // mock Ad tag url with media content for playback selection.
@@ -70,6 +72,17 @@
     adConfig5.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.1%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_ywyb33ou&correlator=6852807&description_url=https://www.voot.com&InterstitialRendered=False";
     [mediaConfigrations addObject:adConfig5];
     
+    //Mahakali s1e2
+    MediaConfig *adConfig6 = [[MediaConfig alloc] init];
+    adConfig6.mediaSourceURL = @"https://vootvideo.akamaized.net/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_uli7u6kw/v/2/pv/1/flavorId/0_5v7190t2/name/a.mp4/index.m3u8/index-v1-a1.m3u8?__hdnea__=st=1589263528~exp=1589349928~acl=/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_uli7u6kw/v/2/pv/1/flavorId/0_*~hmac=f8259455fae8f5bda195431c88ccef3a21e1802ad1afebb66b4000ec884ee286";
+    adConfig6.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COH&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_uli7u6kw&correlator=3909324&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig6];
+    
+    //Krishna  s12e1
+    MediaConfig *adConfig7 = [[MediaConfig alloc] init];
+    adConfig7.mediaSourceURL = @"https://vootvideo.akamaized.net/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_ihxjjhd1/v/2/pv/1/flavorId/0_r4kphryg/name/a.mp4/index.m3u8/index-v1-a1.m3u8?__hdnea__=st=1589265336~exp=1589351736~acl=/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_ihxjjhd1/v/2/pv/1/flavorId/0_*~hmac=28854a7b4f72b682a3bb5bf6c65a6262214cd069321e199ccf161468e0f97829";
+    adConfig7.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COH&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_ihxjjhd1&correlator=3481380&description_url=https://www.voot.com&InterstitialRendered=False";
+    [mediaConfigrations addObject:adConfig7];
 }
 
 
