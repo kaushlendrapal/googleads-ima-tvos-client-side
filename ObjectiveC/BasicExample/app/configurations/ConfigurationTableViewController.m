@@ -51,7 +51,7 @@
     // Roudies s18e6
     MediaConfig *adConfig2 = [[MediaConfig alloc] init];
     adConfig2.mediaSourceURL = @"https://cdnapisec.kaltura.com/p/1982551/sp/198255100/playManifest/protocol/https/entryId/0_uuel9u8v/format/applehttp/tags/tv/f/a.m3u8";
-    adConfig2.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id=judBw77VOhUW2zUZTEGFA7KZGnq2&sample_ar=skippablelinear&Gender=M&Age=15&AppVersion=2.2.1&OSVersion=13.3&OptOut=False&PackageName=com.viacom18.voottvosdev&DeviceModel=Simulator Apple TV 4K&first_time=false&logintype=Native&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_uuel9u8v&correlator=1620132&description_url=https://www.voot.com&InterstitialRendered=False";
+    adConfig2.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/MTV&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_uuel9u8v&correlator=8886955&description_url=https://www.voot.com&InterstitialRendered=False";
     [mediaConfigrations addObject:adConfig2];
     
 //    Roudies s18e5
@@ -78,10 +78,10 @@
     adConfig6.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COH&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_uli7u6kw&correlator=3909324&description_url=https://www.voot.com&InterstitialRendered=False";
     [mediaConfigrations addObject:adConfig6];
     
-    //Krishna  s12e1
+    //suri  s12e1
     MediaConfig *adConfig7 = [[MediaConfig alloc] init];
-    adConfig7.mediaSourceURL = @"https://vootvideo.akamaized.net/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_ihxjjhd1/v/2/pv/1/flavorId/0_r4kphryg/name/a.mp4/index.m3u8/index-v1-a1.m3u8?__hdnea__=st=1589265336~exp=1589351736~acl=/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_ihxjjhd1/v/2/pv/1/flavorId/0_*~hmac=28854a7b4f72b682a3bb5bf6c65a6262214cd069321e199ccf161468e0f97829";
-    adConfig7.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COH&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_ihxjjhd1&correlator=3481380&description_url=https://www.voot.com&InterstitialRendered=False";
+    adConfig7.mediaSourceURL = @"https://vootvideo.akamaized.net/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_jh74nkwm/v/2/pv/1/ev/3/flavorId/0_pwp8tm5d/name/a.mp4/index.m3u8/index-v1-a1.m3u8?__hdnea__=st=1589450903~exp=1589537303~acl=/s/enc/hls/p/1982551/sp/198255100/serveFlavor/entryId/0_jh74nkwm/v/2/pv/1/ev/3/flavorId/0_*~hmac=58485ad4389f33b3765368051af1f01118bc1e78222ca1704d44b1eb29cdb7d8";
+    adConfig7.adTagURL = @"https://pubads.g.doubleclick.net/gampad/live/ads?sz=1920x1080&iu=/21633895671/QA/apple_tv/COG&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=distinct_id%3DjudBw77VOhUW2zUZTEGFA7KZGnq2%26sample_ar%3Dskippablelinear%26Gender%3DM%26Age%3D15%26AppVersion%3D2.2.2%26OSVersion%3D13.3%26OptOut%3DFalse%26PackageName%3Dcom.viacom18.voottvosdev%26DeviceModel%3DSimulator%20Apple%20TV%204K%26first_time%3Dfalse%26logintype%3DNative&cmsid=2510338&ppid=judBw77VOhUW2zUZTEGFA7KZGnq2&vid=0_jh74nkwm&correlator=4766975&description_url=https://www.voot.com&InterstitialRendered=False";
     [mediaConfigrations addObject:adConfig7];
 }
 
